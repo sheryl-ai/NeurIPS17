@@ -83,7 +83,7 @@ Directory Structure
 ===================
 
 Please make sure your directories/files are satisfied the following structure before running the code.
-'''bash
+'''
 .
 ├── classifier
 │   ├── lightgbm.py
