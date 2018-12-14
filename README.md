@@ -66,17 +66,13 @@ Notes:
 2) Installation commands summary: <br />
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh <br />
 bash Anaconda3-5.0.1-Linux-x86_64.sh <br />
-source ~/.bashrc
-
-python -m nltk.downloader all
-
+source ~/.bashrc <br />
+python -m nltk.downloader all <br />
 conda install -c conda-forge xgboost <br />
-conda install -c conda-forge lightgbm
-
+conda install -c conda-forge lightgbm <br />
 sudo apt-get update <br />
 sudo apt install gcc <br />
-pip install pyahocorasick
-
+pip install pyahocorasick <br />
 conda install -c anaconda gensim <br />
 conda install -c conda-forge testfixtures <br />
 conda install -c conda-forge jsonlines
