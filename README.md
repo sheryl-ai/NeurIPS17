@@ -134,7 +134,7 @@ Please make sure your directories/files are satisfied the following structure be
 └── run.py
 ```
 
-The input data can be found in the [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
+The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
 
 Note:
 1) 5fold.map.pkl is a pre-defined 5 fold cross-validation split for testing only.
