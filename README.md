@@ -63,7 +63,7 @@ The following instructions are based on Ubuntu 16.04 and Python 3.6.
 Notes:
 1) Anaconda is always the first one that needs to be installed. Installation orders of all other packages can be different.
 
-2) Installation commands summary:
+2) Installation commands summary: <br />
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh <br />
 bash Anaconda3-5.0.1-Linux-x86_64.sh <br />
 source ~/.bashrc
