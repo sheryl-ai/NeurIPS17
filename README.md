@@ -1,10 +1,6 @@
 # NeurIPS17-Competition-Classifying-Genetic-Mutations
 
-This repository currently contains the [slides](https://github.com/sheryl-ai/The-NIPS-17-Competition-Classifying-Genetic-Mutations/blob/master/NIPS%20workshop.pdf) we presented in NIPS 2017.
-
-Our solution is the winner of the NIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017).
-
-The source code is for NIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations". For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment).
+Our solution is the winner of the NIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017). The source code is for NIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations". For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment). This repository currently contains the [slides](https://github.com/sheryl-ai/The-NIPS-17-Competition-Classifying-Genetic-Mutations/blob/master/NIPS%20workshop.pdf) we presented in NIPS 2017.
 
 Please send your email to Xi Zhang <sheryl.zhangxi@gmail.com> or Dandi Chen <dandichen.cs@gmail.com> with questions and comments associated with the code.
 
@@ -87,6 +83,7 @@ Directory Structure
 ===================
 
 Please make sure your directories/files are satisfied the following structure before running the code.
+'''bash
 .
 ├── classifier
 │   ├── lightgbm.py
@@ -135,6 +132,7 @@ Please make sure your directories/files are satisfied the following structure be
 ├── helper.py
 ├── ReadMe
 └── run.py
+'''
 
 Note:
 1) 5fold.map.pkl is a pre-defined 5 fold cross-validation split for testing only.
