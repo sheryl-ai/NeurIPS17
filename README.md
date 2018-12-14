@@ -47,37 +47,38 @@ The following instructions are based on Ubuntu 16.04 and Python 3.6.
 
 
 4) Install other necessary packages, including:<br />
-	a) ahocorasick(https://pypi.python.org/pypi/pyahocorasick/#api-overview)
-		Run the command 'pip install pyahocorasick' directly.
+	a) ahocorasick(https://pypi.python.org/pypi/pyahocorasick/#api-overview). <br />
+	Run the command 'pip install pyahocorasick' directly. If you meet some problems, try to install other packages used by pyahocorasick, such as gcc, by running 'sudo apt install gcc'. Before that, you may need to update the package lists for upgrades for packages that need upgrading by running 'sudo apt-get update'. Thus, the correct order for intalling pyahocorasick is: first update package lists, then install gcc. Finally install pyahocorasick.
 
-		If you meet some problems, try to install other packages used by pyahocorasick, such as gcc, by running 'sudo apt install gcc'. Before that, you may need to update the package lists for upgrades for packages that need upgrading by running 'sudo apt-get update'. Thus, the correct order for intalling pyahocorasick is: first update package lists, then install gcc. Finally install pyahocorasick.
+	b) gensim. <br />
+	Please refer to https://radimrehurek.com/gensim/install.html for installation guide, or you can run 'conda install -c anaconda gensim' in the terminal directly.
 
-	b) gensim. Please refer to https://radimrehurek.com/gensim/install.html for installation guide, or you can run 'conda install -c anaconda gensim' in the terminal directly.
+	c) testfixtures. <br />
+	Simply run 'conda install -c conda-forge testfixtures'.
 
-	c) testfixtures. Simply run 'conda install -c conda-forge testfixtures'.
-
-	d) jsonlines. Command is 'conda install -c conda-forge jsonlines'.
+	d) jsonlines. <br />
+	Command is 'conda install -c conda-forge jsonlines'.
 
 
 Notes:
 1) Anaconda is always the first one that needs to be installed. Installation orders of all other packages can be different.
 
 2) Installation commands summary:
-wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
-bash Anaconda3-5.0.1-Linux-x86_64.sh
+wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh <br />
+bash Anaconda3-5.0.1-Linux-x86_64.sh <br />
 source ~/.bashrc
 
 python -m nltk.downloader all
 
-conda install -c conda-forge xgboost
+conda install -c conda-forge xgboost <br />
 conda install -c conda-forge lightgbm
 
-sudo apt-get update
-sudo apt install gcc
+sudo apt-get update <br />
+sudo apt install gcc <br />
 pip install pyahocorasick
 
-conda install -c anaconda gensim
-conda install -c conda-forge testfixtures
+conda install -c anaconda gensim <br />
+conda install -c conda-forge testfixtures <br />
 conda install -c conda-forge jsonlines
 
 
