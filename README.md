@@ -4,8 +4,8 @@ This repository currently contains the [slides](https://github.com/sheryl-ai/The
 
 Our solution is the winner of the NIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017).
 
-The source code is for NIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations".
-For more details, please refer to https://www.kaggle.com/c/msk-redefining-cancer-treatment.
+The source code is for NIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations". For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment).
+
 Please send your email to Xi Zhang <sheryl.zhangxi@gmail.com> or Dandi Chen <dandichen.cs@gmail.com> with questions and comments associated with the code.
 
 
