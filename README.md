@@ -163,3 +163,15 @@ To run a few sections, please refer to run.py to comment some lines, such as com
 Note:
 1) pos_tagging_nmf() needs to be called after calling pos_tagging_feats() in helper.py.
 2) It is time-consufing to run all four sections at once. It may take several days to finish without parallel settings, depending on computation power.
+
+## References 
+If you find this project useful in your research, please consider citing our paper: 
+```
+@article{zhang2018nips,
+  title={The NIPS'17 Competition: A Multi-View Ensemble Classification Model for Clinically Actionable Genetic Mutations},
+  author={Zhang, Xi and Chen, Dandi and Zhu, Yongjun and Che, Chao and Su, Chang and Zhao, Sendong and Min, Xu and Wang, Fei},
+  journal={arXiv preprint arXiv:1806.09737},
+  year={2018}
+}
+```
+This paper can be accessed on : [Classifying Genetic Mutations] (https://arxiv.org/pdf/1806.09737.pdf)
