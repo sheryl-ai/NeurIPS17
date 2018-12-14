@@ -19,8 +19,7 @@ Environment Setting Up
 
 The following instructions are based on Ubuntu 16.04 and Python 3.6.
 
-1) Install Anaconda.
-
+1) Install Anaconda.<br />
 	a) Download Anaconda at your working directory by typing 'wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh'
 	in the terminal.
 
@@ -30,8 +29,7 @@ The following instructions are based on Ubuntu 16.04 and Python 3.6.
 	command 'python' in the terminal, and it should print something similar to 'Python 3.6.3 |Anaconda, Inc.| (default, Oct 13 2017, 12:02:49)'.
 
 
-2) Install NLTK data. 
-
+2) Install NLTK data. <br />
 	Please make sure the nltk.path is set correcly if you customize installation path.
 	Follow the instruction at http://www.nltk.org/data.html to install NLTK data. Or you can simply run the command 'python -m nltk.downloader all'
 	in ubuntu terminal.
@@ -41,17 +39,14 @@ The following instructions are based on Ubuntu 16.04 and Python 3.6.
 	from nltk.data import path
 	path.append('/home/ubuntu/software/nltk_data')
 
-
-3) Install XGBoost and LightGBM.
-
+3) Install XGBoost and LightGBM.<br />
 	Run the commands 'conda install -c conda-forge xgboost' and 'conda install -c conda-forge lightgbm' seperately to install both XGBoost and LightGBM.
 
 	Other install options for XGBoost and LightGBM can be found at http://xgboost.readthedocs.io/en/latest/build.html and
 	https://github.com/Microsoft/LightGBM/blob/master/docs/Installation-Guide.rst.
 
 
-4) Install other necessary packages, including:
-
+4) Install other necessary packages, including:<br />
 	a) ahocorasick(https://pypi.python.org/pypi/pyahocorasick/#api-overview)
 		Run the command 'pip install pyahocorasick' directly.
 
@@ -155,8 +150,7 @@ Each single feature has recommended number of trees as classifier parameter in r
 Parameters
 ==========
 
-XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.md
-
+XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.md <br />
 LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 
