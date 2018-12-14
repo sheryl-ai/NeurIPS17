@@ -83,7 +83,7 @@ Directory Structure
 ===================
 
 Please make sure your directories/files are satisfied the following structure before running the code.
-'''bash
+```bash
 .
 ├── classifier
 │   ├── lightgbm.py
@@ -132,7 +132,7 @@ Please make sure your directories/files are satisfied the following structure be
 ├── helper.py
 ├── ReadMe
 └── run.py
-'''
+```
 
 The input data can be found in the [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
 
