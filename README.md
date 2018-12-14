@@ -1,8 +1,8 @@
 # NeurIPS17-Competition-Classifying-Genetic-Mutations
 
-Our solution is the winner of the NIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017). The source code is for NIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations". For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment). This repository currently contains the [slides](https://github.com/sheryl-ai/The-NIPS-17-Competition-Classifying-Genetic-Mutations/blob/master/NIPS%20workshop.pdf) we presented in NIPS 2017.
+Our solution is the winner of the NeurIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017). The source code is for NeurIPS 2017 Competition "Classifying Clinically Actionable Genetic Mutations". For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment). This repository currently contains the [slides](https://github.com/sheryl-ai/The-NeurIPS-17-Competition-Classifying-Genetic-Mutations/blob/master/NeurIPS%20workshop.pdf) we presented in NeurIPS 2017.
 
-Please send your email to Xi Zhang <sheryl.zhangxi@gmail.com> or Dandi Chen <dandichen.cs@gmail.com> with questions and comments associated with the code.
+Please send your email to Xi Zhang <sheryl.zhangxi@gmail.com> and Dandi Chen <dandichen.cs@gmail.com> with questions and comments associated with the code.
 
 
 Table of Contents
@@ -134,6 +134,8 @@ Please make sure your directories/files are satisfied the following structure be
 └── run.py
 '''
 
+The input data can be found in the [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
+
 Note:
 1) 5fold.map.pkl is a pre-defined 5 fold cross-validation split for testing only.
 2) tree_feat_dict.pkl is a pre-defined Python dictionary for recommended number of trees in random forest classifier.
@@ -147,7 +149,6 @@ Parameters
 ==========
 
 XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.md
-
 LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 
