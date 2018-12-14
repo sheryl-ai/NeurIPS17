@@ -20,6 +20,7 @@ Environment Setting Up
 The following instructions are based on Ubuntu 16.04 and Python 3.6.
 
 1) Install Anaconda.
+
 	a) Download Anaconda at your working directory by typing 'wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh'
 	in the terminal.
 
@@ -28,7 +29,8 @@ The following instructions are based on Ubuntu 16.04 and Python 3.6.
 	c) Run the command 'source ~/.bashrc' in the terminal. After that, you are supposed to run python within Anaconda. To check it, run the
 	command 'python' in the terminal, and it should print something similar to 'Python 3.6.3 |Anaconda, Inc.| (default, Oct 13 2017, 12:02:49)'.
 
-2) Install NLTK data. Please make sure the nltk.path is set correcly if you customize installation path.
+2) Install NLTK data. 
+	Please make sure the nltk.path is set correcly if you customize installation path.
 	Follow the instruction at http://www.nltk.org/data.html to install NLTK data. Or you can simply run the command 'python -m nltk.downloader all'
 	in ubuntu terminal.
 
