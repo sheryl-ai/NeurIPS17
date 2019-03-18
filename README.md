@@ -147,7 +147,7 @@ Each single feature has recommended number of trees as classifier parameter in r
 Parameters
 ==========
 
-XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.md <br />
+XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.rst <br />
 LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 
