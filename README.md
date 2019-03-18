@@ -150,6 +150,14 @@ Parameters
 XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.rst <br />
 LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
 
+Dataset
+==========
+The index map of the predefined 9 Classes is: 
+```bash
+CLASS_NUM_MAP ={'Likely Loss-of-function':1, 'Likely Gain-of-function':2, 'Neutral':3, 
+                'Loss-of-function':4, 'Likely Neutral':5, 'Inconclusive':6, 'Gain-of-function':7,
+                'Likely Switch-of-function':8, 'Switch-of-function':9}
+```
 
 Usage Example
 =============
