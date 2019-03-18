@@ -133,8 +133,6 @@ Please make sure your directories/files are satisfied the following structure be
 └── run.py
 ```
 
-The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
-
 Note:
 1) 5fold.map.pkl is a pre-defined 5 fold cross-validation split for testing only.
 2) tree_feat_dict.pkl is a pre-defined Python dictionary for recommended number of trees in random forest classifier.
@@ -152,6 +150,7 @@ LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 Dataset
 ==========
+The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
 The index map of the predefined 9 Classes is: 
 ```bash
 CLASS_NUM_MAP ={'Likely Loss-of-function':1, 'Likely Gain-of-function':2, 'Neutral':3, 
