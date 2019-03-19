@@ -173,11 +173,13 @@ Note:
 ## References 
 If you find this project useful in your research, please consider citing our paper: 
 ```
-@article{zhang2018nips,
-  title={The NIPS'17 Competition: A Multi-View Ensemble Classification Model for Clinically Actionable Genetic Mutations},
-  author={Zhang, Xi and Chen, Dandi and Zhu, Yongjun and Che, Chao and Su, Chang and Zhao, Sendong and Min, Xu and Wang, Fei},
-  journal={arXiv preprint arXiv:1806.09737},
-  year={2018}
+@incollection{zhang2018multi,
+  title={Multi-view Ensemble Classification for Clinically Actionable Genetic Mutations},
+  author={Zhang, Xi and Chen, Dandi and Zhu, Yongjun and Che, Chao and Su, Chang and Zhao, Sendong and Min, Xu and Wang, Fei},
+  booktitle={The NIPS'17 Competition: Building Intelligent Systems},
+  pages={79--99},
+  year={2018},
+  publisher={Springer}
 }
 ```
 This paper can be accessed on : [Classifying Genetic Mutations] (https://arxiv.org/pdf/1806.09737.pdf)
