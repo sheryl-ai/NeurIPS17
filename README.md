@@ -10,8 +10,11 @@ Table of Contents
 
 - Environment Setting Up
 - Directory Structure
-- Parameters
+- Dataset
+- Demo
 - Usage Example
+- Parameters
+- Reference
 
 
 Environment Setting Up
@@ -111,6 +114,8 @@ Please make sure your directories/files are satisfied the following structure be
 │   │   ├── pubmed.jsonl
 │   │   ├── pubmed_stopword_list.txt
 │   │   └── tree_feat_dict.pkl
+│   ├── stage1_variants
+│   ├── stage2_variants
 │   ├── stage1_solution_filtered.csv
 │   ├── stage1_test_368
 │   ├── stage_2_private_solution.csv
@@ -142,12 +147,6 @@ Each single feature has recommended number of trees as classifier parameter in r
 5) nips.10k.dict.pkl stores top 10k words in text data.
 
 
-Parameters
-==========
-
-XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.rst <br />
-LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
-
 Dataset
 ==========
 The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
@@ -157,6 +156,36 @@ CLASS_NUM_MAP ={'Likely Loss-of-function':1, 'Likely Gain-of-function':2, 'Neutr
                 'Loss-of-function':4, 'Likely Neutral':5, 'Inconclusive':6, 'Gain-of-function':7,
                 'Likely Switch-of-function':8, 'Switch-of-function':9}
 ```
+
+
+Demo
+==========
+Run demo.py to show the prediction results by giving a gene name and a variation name as the following example:
+```bash
+python demo.py -gene=TGFBR1 -variation=S387Y
+```
+The predicted results should be: 
+```bash
+ID: 95 Gene: TGFBR1 Variation: S387Y
+  class         prediction      groundtruth         
+    1      0.06485872604678475       0.0
+    2      0.0020891761251413538     0.0
+    3      0.0011311423530236504     0.0
+    4      0.9245424266930476        1.0
+    5      0.0017318023781274679     0.0
+    6      0.0017330807090426808     0.0
+    7      0.002021304704367886      0.0
+    8      0.0009614994703982653     0.0
+    9      0.0009308415200664855     0.0
+```
+
+
+Parameters
+==========
+
+XGBoost parameters: https://github.com/dmlc/xgboost/blob/master/doc/parameter.rst <br />
+LightGBM parameters: http://lightgbm.readthedocs.io/en/latest/Parameters.html
+
 
 Usage Example
 =============
@@ -170,7 +199,10 @@ Note:
 1) pos_tagging_nmf() needs to be called after calling pos_tagging_feats() in helper.py.
 2) It is time-consufing to run all four sections at once. It may take several days to finish without parallel settings, depending on computation power.
 
-## References 
+
+Reference
+=============
+
 If you find this project useful in your research, please consider citing our paper: 
 ```
 @incollection{zhang2018multi,
