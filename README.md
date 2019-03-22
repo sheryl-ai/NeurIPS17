@@ -149,7 +149,7 @@ Each single feature has recommended number of trees as classifier parameter in r
 
 Dataset
 ==========
-The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data).
+The input data can be found via [kaggle's page](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data). Copy the input files into the folder 'data'. The necesesary files in other folders including 'pre_define' will be generate by running the code at the first time.
 The index map of the predefined 9 Classes is: 
 ```bash
 CLASS_NUM_MAP ={'Likely Loss-of-function':1, 'Likely Gain-of-function':2, 'Neutral':3, 
