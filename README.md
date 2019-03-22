@@ -1,7 +1,8 @@
 # NeurIPS17-Competition-Classifying-Genetic-Mutations
 
-Our solution is the Top-1 winner of the NeurIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017). For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment). This repository contains the [slides](https://github.com/sheryl-ai/NeurIPS17-Competition-Classifying-Genetic-Mutations/blob/master/NeurIPS%20workshop.pdf) we presented in NeurIPS 2017. An illustration of the framework we used is:
+Our solution is the Top-1 winner of the NeurIPS competition of [Classifying Clinically Actionable Genetic Mutations](https://www.mskcc.org/trending-topics/msk-advances-its-ai-machine-learning-nips-2017). For more details, please refer to [kaggle](https://www.kaggle.com/c/msk-redefining-cancer-treatment). This repository contains the [slides](https://github.com/sheryl-ai/NeurIPS17-Competition-Classifying-Genetic-Mutations/blob/master/NeurIPS%20workshop.pdf) we presented in NeurIPS 2017. 
 
+An illustration of our proposed framework is:
 <p align="center"><img src="figures/Framework_NIPS.png" alt="Framework NIPS Challenge" width="600"></p>
 
 Please send your email to Xi Zhang <sheryl.zhangxi@gmail.com> and Dandi Chen <dandichen.cs@gmail.com> with questions and comments associated with the code. 
