@@ -136,6 +136,7 @@ Please make sure your directories/files are satisfied the following structure be
 │   └── relation_mining.py
 ├── helper.py
 ├── ReadMe
+├── demo.py
 └── run.py
 ```
 
