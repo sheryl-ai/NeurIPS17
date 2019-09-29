@@ -119,7 +119,7 @@ def get_classifier(feat_name, train_x, train_y):
 
 
 def get_true_label():   # load true label given by Kaggle website
-    df = pd.read_csv('data/stage_2_private_solution.csv')
+    df = pd.read_csv('data/stage2_private_solution.csv')
     label = list(df[df != 0].drop(['ID'], axis=1).stack().index)
     truth = pd.DataFrame({'ID': df['ID'].tolist(), 'Class': [int(val[1][-1]) for val in label]})[['ID', 'Class']]
     return truth
