@@ -109,13 +109,13 @@ def train_word2vec(train_x, dim_):
     print('Training ' + str(dim_) + ' dim unigram word2vec model...')
     docs = _get_text(train_x)
     model = gensim.models.word2vec.Word2Vec(docs, size=dim_, alpha=0.05, window=30, min_count=5)
-    model.save(open('data/models/word2vec/' + str(dim_) + '_dim/nips_w2v', 'wb'))
+    model.save(open('data/models/word2vec/' + str(dim_) + '_dim/neurips_w2v', 'wb'))
 
 
 def word2vec_feats(train, test, dim):
     corpus = pd.concat((train, test), axis=0)
     train_word2vec(corpus['Text'].values, dim)
-    model = gs.Word2Vec.load('data/models/word2vec/' + str(dim) + '_dim/nips_w2v')
+    model = gs.Word2Vec.load('data/models/word2vec/' + str(dim) + '_dim/neurips_w2v')
 
     print('Computing word2vec feature...')
     train_w2v_mat = np.zeros((train.shape[0], dim * 2), dtype=np.float32)

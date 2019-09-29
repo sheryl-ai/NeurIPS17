@@ -44,7 +44,7 @@ def train_doc2vec_dm(train_x, dim_, cores):
     model = gensim.models.doc2vec.Doc2Vec(size=dim_, window=10, min_count=1, hs=1, workers=cores, iter=55)
     model.build_vocab(train_corpus)
     model.train(train_corpus, total_examples=model.corpus_count, epochs=model.iter)
-    model.save(open('data/models/doc2vec/' + str(dim_) + '_dim/nips_d2v_dm', 'wb'))
+    model.save(open('data/models/doc2vec/' + str(dim_) + '_dim/neurips_d2v_dm', 'wb'))
 
 
 def train_doc2vec_dbow(train_x, dim_, cores):
@@ -54,7 +54,7 @@ def train_doc2vec_dbow(train_x, dim_, cores):
     model = gensim.models.doc2vec.Doc2Vec(size=dim_, dm=0, window=10, min_count=1, hs=1, workers=cores, iter=55)
     model.build_vocab(train_corpus)
     model.train(train_corpus, total_examples=model.corpus_count, epochs=model.iter)
-    model.save(open('data/models/doc2vec/' + str(dim_) + '_dim/nips_d2v_dbow', 'wb'))
+    model.save(open('data/models/doc2vec/' + str(dim_) + '_dim/neurips_d2v_dbow', 'wb'))
 
 
 def doc2vec_feats(train, test, dim1, dim2):
@@ -67,8 +67,8 @@ def doc2vec_feats(train, test, dim1, dim2):
     train_doc2vec_dbow(corpus['Text'].values, dim2, cores)
 
     print('Computing doc2vec(PV-DM + PV-DBOW) feature...')
-    mode1_dm = gensim.models.doc2vec.Doc2Vec.load('data/models/doc2vec/' + str(dim1) + '_dim/nips_d2v_dm')
-    mode1_dbow = gensim.models.doc2vec.Doc2Vec.load('data/models/doc2vec/' + str(dim2) + '_dim/nips_d2v_dbow')
+    mode1_dm = gensim.models.doc2vec.Doc2Vec.load('data/models/doc2vec/' + str(dim1) + '_dim/neurips_d2v_dm')
+    mode1_dbow = gensim.models.doc2vec.Doc2Vec.load('data/models/doc2vec/' + str(dim2) + '_dim/neurips_d2v_dbow')
     model = ConcatenatedDoc2Vec([mode1_dm, mode1_dbow])
 
     cor = list(read_corpus(train_corpus))
@@ -807,10 +807,10 @@ def _build_dict():
             except AttributeError:
                 pass
 
-    with open('data/pre_define/nips.10k.dict.pkl', 'rb') as f:
-        nips10k = pickle.load(f)
+    with open('data/pre_define/neurips.10k.dict.pkl', 'rb') as f:
+        neurips10k = pickle.load(f)
 
-    title = set([w for w in title if not w.isdigit() and len(w) != 1 and w in nips10k])
+    title = set([w for w in title if not w.isdigit() and len(w) != 1 and w in neurips10k])
 
     print('Saving title dictionary...')
     with open('data/intermediate/title.dict.pkl', 'wb') as f:

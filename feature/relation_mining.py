@@ -15,7 +15,7 @@ from feature import document_mining
 
 def _get_entity_text(train, flag='train'):
     if flag == 'train':
-        print('*' * 20 + 'nips 3321 + stage1_test 368' + '*' * 20)
+        print('*' * 20 + 'neurips 3321 + stage1_test 368' + '*' * 20)
     else:
         print('*' * 20 + 'stage 2 986' + '*' * 20)
     gene_list = set(train['Gene'].tolist())

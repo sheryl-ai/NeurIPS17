@@ -59,7 +59,7 @@ def prediction_demo(stage1_x, stage1_label, gene, variation):
 
 
 if __name__ == '__main__':
-    # load nips stage1 train and test data
+    # load neurips stage1 train and test data
     stage1_variant = pd.read_csv('data/stage1_variants')
     stage2_variant = pd.read_csv('data/stage2_variants')
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     labels = list(stage1_solution[stage1_solution != 0].drop(['ID'], axis=1).stack().index)
     stage1_solution_variant['Class'] = pd.Series(data=[int(val[1][-1]) for val in labels], index=stage1_solution['ID'])
 
-    # merge nips stage1 and stage1_solution
+    # merge neurips stage1 and stage1_solution
     stage1 = pd.concat((stage1_variant, stage1_solution_variant), axis=0, ignore_index=True)
     stage1_label = stage1['Class'].values
     stage1_x = stage1.drop(['Class'], axis=1)
